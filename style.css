@@ -1,0 +1,268 @@
+:root {
+  --red: #e53935;
+  --blue: #1e3a8a;
+  --light: #f4f7fb;
+  --text: #1f2937;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #eef4ff, #ffffff);
+}
+
+header {
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--red), var(--blue));
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 1px;
+}
+
+header p {
+  max-width: 680px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  padding: 10px 14px;
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+hr {
+  display: none;
+}
+
+main {
+  width: min(92%, 960px);
+  margin: 28px auto;
+  display: grid;
+  gap: 20px;
+}
+
+main section {
+  padding: 24px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(30, 58, 138, 0.08);
+  border-top: 6px solid var(--red);
+}
+
+#powers,
+#allies,
+#timeline,
+#contact {
+  border-top-color: var(--blue);
+}
+
+.card {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+p,
+li,
+dd {
+  line-height: 1.7;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+dt {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+dd {
+  margin: 6px 0 0;
+}
+
+a {
+  color: var(--blue);
+}
+
+img {
+  display: block;
+  width: min(100%, 260px);
+  height: auto;
+  margin: 16px auto 20px;
+  border-radius: 20px;
+  border: 4px solid var(--white);
+  box-shadow: 0 8px 18px rgba(30, 58, 138, 0.15);
+}
+
+#timeline {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #dbe4f0;
+}
+
+th {
+  color: var(--white);
+  background: var(--blue);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  color: var(--white);
+  background: var(--red);
+}
+
+button[type="reset"] {
+  margin-left: 10px;
+  color: var(--blue);
+  background: #e5ecf7;
+}
+
+footer {
+  padding: 0 20px 32px;
+  text-align: center;
+  color: #64748b;
+}
+
+main section {
+  transition: 0.3s;
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+img {
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 2s ease;
+}
+
+nav a {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 40px 16px;
+  }
+
+  nav a {
+    width: 100%;
+    display: block;
+  }
+
+  main section {
+    padding: 20px;
+  }
+
+  #timeline table {
+    min-width: 520px;
+  }
+
+  button,
+  button[type="reset"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+

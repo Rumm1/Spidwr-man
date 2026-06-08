@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Человек-паук</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Человек-паук</h1>
+    <p>Легендарный супергерой Marvel, который защищает Нью-Йорк и вдохновляет миллионы фанатов.</p>
+
+    <nav>
+      <a href="#about">О герое</a>
+      <a href="#powers">Способности</a>
+      <a href="#mission">Миссия</a>
+      <a href="#allies">Союзники</a>
+      <a href="#timeline">История</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <section class="card" id="about">
+      <h2>О герое</h2>
+      <img src="./Spiderman.png" width="250" alt="Человек-паук">
+      <p>Человек-паук является одним из самых известных супергероев в мире комиксов.</p>
+      <p>Под маской чаще всего скрывается Питер Паркер, обычный парень, который получил необычные способности после укуса паука.</p>
+      <p>Он совмещает повседневную жизнь, учебу и постоянную борьбу с преступностью.</p>
+      <p id="heroMessage">
+        Нажми на кнопку, чтобы узнать главный принцип героя.
+      </p>
+
+      <button id="heroBtn">Узнать принцип</button>
+
+    </section>
+    <hr>
+    <section class="card" id="powers">
+      <h2>Способности</h2>
+      <p>Человек-паук известен своими уникальными силами и невероятной ловкостью.</p>
+      <ul>
+        <li>Сверхчеловеческая сила</li>
+        <li>Быстрая реакция</li>
+        <li>Паучье чутье</li>
+        <li>Передвижение по стенам</li>
+        <li>Использование паутины</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="mission">
+      <h2>Миссия героя</h2>
+
+      <p>Главная идея истории Человека-паука состоит в том, чтобы использовать свою силу ради добра и защиты других людей.</p>
+
+      <ol>
+        <li>Спасать жителей города</li>
+        <li>Останавливать злодеев</li>
+        <li>Помогать слабым и беззащитным</li>
+        <li>Оставаться честным и справедливым</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <section id="allies">
+      <h2>Союзники и враги</h2>
+
+      <dl>
+        <dt>Тетя Мэй</dt>
+        <dd>Самый близкий человек для Питера Паркера и его главная поддержка.</dd>
+
+        <dt>Мэри Джейн</dt>
+        <dd>Важный персонаж в истории Человека-паука и его личной жизни.</dd>
+
+        <dt>Железный человек</dt>
+        <dd>Наставник и пример для Питера в некоторых версиях истории.</dd>
+
+        <dt>Зеленый гоблин</dt>
+        <dd>Один из самых опасных и известных врагов Человека-паука.</dd>
+
+        <dt>Доктор Осьминог</dt>
+        <dd>Гениальный ученый, который стал серьезным противником героя.</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <section id="timeline">
+      <h2>История на экране</h2>
+
+      <table border="1">
+        <tr>
+          <th>Год</th>
+          <th>Событие</th>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>Выход одного из самых известных фильмов о Человеке-пауке</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>Премьера анимационного фильма о вселенной Spider-Verse</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>Выход фильма Spider-Man: No Way Home</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="links">
+      <h2>Полезные ссылки</h2>
+
+      <p>Если хочешь узнать больше о герое, посмотри эти страницы.</p>
+
+      <ul>
+        <li>
+          <a href="https://www.marvel.com/characters/spider-man-peter-parker" target="_blank" rel="noopener noreferrer">Официальная страница Marvel</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Spider-Man" target="_blank" rel="noopener noreferrer">Статья в Wikipedia</a>
+        </li>
+        <li>
+          <a href="https://www.marvel.com/comics" target="_blank" rel="noopener noreferrer">Комиксы Marvel</a>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2>Форма для фанатов</h2>
+
+      <p>Заполни форму, если хочешь оставить мнение о Человеке-пауке.</p>
+
+      <form>
+        <label for="name">Твое имя:</label>
+        <br>
+        <input id="name" type="text" placeholder="Введи имя" required>
+        <br><br>
+
+        <label for="email">Твой email:</label>
+        <br>
+        <input id="email" type="email" placeholder="Введи email" required>
+        <br><br>
+
+        <label for="movie">Любимый фильм:</label>
+        <br>
+        <input id="movie" type="text" placeholder="Например, No Way Home">
+        <br><br>
+
+        <label for="message">Сообщение:</label>
+        <br>
+        <textarea id="message" placeholder="Напиши, чем тебе нравится этот герой"></textarea>
+        <br><br>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+      </form>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Страница посвящена Человеку-пауку.</p>
+    <p>HTML изменен, CSS пока оставлен без правок.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
