@@ -1,8 +1,8 @@
 :root {
-  --red: #e53935;
-  --blue: #1e3a8a;
+  --red: #ff0400;
+  --blue: #000000;
   --light: #f4f7fb;
-  --text: #1f2937;
+  --text: #5756b8;
   --white: #ffffff;
 }
 
@@ -12,16 +12,21 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: var(--text);
-  background: linear-gradient(180deg, #eef4ff, #ffffff);
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: linear-gradient(180deg, var(--text), var(--red));
+  background: linear-gradient(180deg, #000000, #070000);
 }
-
+.white-word {
+  color: var(--white);
+}
+.red-word {
+  color: var(--red);
+}
 header {
   padding: 48px 20px;
   text-align: center;
   color: var(--white);
-  background: linear-gradient(135deg, var(--red), var(--blue));
+  background:  linear-gradient(180deg, #4b040493, #070000), url(Spider.jpg) no-repeat center/cover;
 }
 
 h1 {
@@ -70,17 +75,27 @@ main {
 
 main section {
   padding: 24px;
-  background: var(--white);
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(10, 10, 18, 0.42);
+  border: 1px solid rgba(255, 4, 0, 0.7);
+  border-top: 1px solid rgba(255, 4, 0, 0.9);
   border-radius: 20px;
-  box-shadow: 0 10px 24px rgba(30, 58, 138, 0.08);
-  border-top: 6px solid var(--red);
+  box-shadow:
+    0 0 16px rgba(255, 4, 0, 0.45),
+    0 0 36px rgba(87, 86, 184, 0.35),
+    inset 0 0 18px rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
 }
 
 #powers,
 #allies,
 #timeline,
 #contact {
-  border-top-color: var(--blue);
+  border-color: rgba(87, 86, 184, 0.8);
+  box-shadow:
+    0 0 16px rgba(0, 0, 0, 0.55),
+    0 0 36px #ff04005d,
+    inset 0 0 18px rgba(255, 255, 255, 0.04);
 }
 
 .card {
@@ -91,7 +106,7 @@ main section {
 
 h2 {
   margin-top: 0;
-  color: var(--blue);
+  color: var(--red);
   font-size: 2rem;
 }
 
@@ -113,7 +128,8 @@ ol {
 dt {
   margin-top: 12px;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--red);
+  text-shadow: 0 0 10px rgba(255, 4, 0, 0.7);
 }
 
 dd {
@@ -121,7 +137,7 @@ dd {
 }
 
 a {
-  color: var(--blue);
+  color: #8f8dff;
 }
 
 img {
@@ -148,19 +164,20 @@ th,
 td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #dbe4f0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 th {
   color: var(--white);
-  background: var(--blue);
+  background: rgba(87, 86, 184, 0.45);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
 }
 
 label {
   display: block;
   margin-bottom: 6px;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--white);
 }
 
 input,
@@ -168,9 +185,16 @@ textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 16px;
-  border: 1px solid #cbd5e1;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
   font: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.62);
 }
 
 textarea {
@@ -264,5 +288,4 @@ nav a {
     margin-left: 0;
   }
 }
-
 
